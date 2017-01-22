@@ -34,11 +34,6 @@
       "IcyMat\\WebsiteBundle\\Tests\\": "Tests/"
     }
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "2.0.x-dev"
-    }
-  },
   "support": {
     "docs": "https://icymat.pl#contact"
   }
