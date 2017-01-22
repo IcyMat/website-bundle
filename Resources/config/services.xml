@@ -8,5 +8,10 @@
         <service id="icymat.website.manager" class="IcyMat\WebsiteBundle\Service\IcyMatWebsiteManager">
             <argument>%kernel.root_dir%</argument>
         </service>
+
+        <service id="icynat.website.twig" class="IcyMat\WebsiteBundle\Twig\IcyMatWebsiteExtension" public="false">
+            <tag name="twig.extension" />
+            <argument type="service" id="router" />
+        </service>
     </services>
 </container>
