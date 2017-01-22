@@ -4,6 +4,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
 
+    <route id="icymat_website_resource" path="/{resource}/{fileName}.{type}">
+        <default key="_controller">IcyMatWebsiteBundle:Default:files</default>
+        <default key="resource" xsi:nil="true" />
+        <requirement key="resource">css|js|images</requirement>
+        <requirement key="type">jpeg|jpg|png|gif|bmp|js|css</requirement>
+    </route>
+
     <route id="icymat_website_homepage" path="/{resource}/{pageName}">
         <default key="_controller">IcyMatWebsiteBundle:Default:index</default>
         <default key="resource" xsi:nil="true" />
